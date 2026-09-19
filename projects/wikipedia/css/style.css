@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif; 
+  color: #f5f7f9;               
+  background-color: #042909;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.wiki-header {
+  text-align: center;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  color: #3366cc;               
+  margin-bottom: 5px;
+}
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  margin: 0;
+  font-weight: normal;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.hero-image-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lead-text {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 22px;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 4px;
+  margin-top: 30px;
+}
+#see-also-box {
+  background-color: #030a01;   
+  padding: 15px 20px;
+  margin: 25px 0;
+  border-radius: 2px;
+}
+
+#see-also-box h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#see-also-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#see-also-box a {
+  color: #f7f5f5;               
+  font-weight: bold;
+}
+.wiki-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #65adff;
+  padding: 15px;
+  font-size: 13px;
+  color: #54595d;
+  margin-top: 40px;
+}
