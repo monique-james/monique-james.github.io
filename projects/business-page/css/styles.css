@@ -1,0 +1,21 @@
+/* Google Fonts Implementation */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+/* Custom font class for titles and brand header */
+.brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Button color tweak to complement coffee branding */
+.btn-primary {
+    background-color: #6f4e37;
+    border-color: #6f4e37;
+}
+
+.btn-primary:hover {
+    background-color: #553b28;
+    border-color: #553b28;
+}
