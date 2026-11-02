@@ -4,32 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta-->
-    <title>Monique James</title>
-    <meta name="description" content="Whatever Text About Monique Here">
-    <!-- css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="site/css/style.css">
-    <!-- js-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-</head>
-
-<body>
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official journalism portfolio of Monique James, junior journalism major covering sports representation.">
     <title>Monique James - Journalism Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN & FontAwesome Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -37,125 +18,235 @@
             theme: {
                 extend: {
                     colors: {
-                        purpleBrand: '#6B21A8',      /* Primary purple accent */
-                        purpleHover: '#581C87',      /* Darker purple for button hover */
-                        purpleLight: '#8B5CF6',      /* Brighter purple highlight */
-                        bgCream: '#F5F3F7',          /* Subtle off-white/cream background */
-                    },
-                    fontFamily: {
-                        serif: ['"Times New Roman"', 'Times', 'Georgia', 'serif'],
+                        purpleBrand: '#6B21A8',
+                        purpleHover: '#581C87',
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, Georgia, serif;
-            background-color: #F5F3F7;
-            color: #1A1A1A;
-        }
-
-        /* Overlapping text effect mimicking the reference layout */
-        @media (min-width: 1024px) {
-            .hero-title {
-                margin-right: -4rem;
-                z-index: 20;
-                position: relative;
-            }
-        }
-    </style>
 </head>
 
 <body class="min-h-screen flex flex-col justify-between selection:bg-purpleBrand selection:text-white">
 
     <!-- Top Navigation Bar -->
-    <header class="w-full max-w-7xl mx-auto px-6 sm:px-10 py-8 flex justify-between items-center">
-        <!-- Logo / Name -->
-        <a href="#"
-            class="text-lg sm:text-xl font-bold tracking-tight text-purpleBrand hover:opacity-80 transition-opacity">
+    <header
+        class="w-full max-w-7xl mx-auto px-6 sm:px-10 py-8 flex justify-between items-center sticky top-0 bg-[#F5F3F7]/90 backdrop-blur-sm z-30">
+        <a href="#hero" class="text-xl font-bold text-purpleBrand hover:opacity-80 transition-opacity">
             Monique James
         </a>
-
-        <!-- Navigation Links -->
-        <nav class="flex items-center space-x-6 sm:space-x-10 text-base sm:text-lg text-purpleBrand">
-            <a href="#about" class="hover:underline underline-offset-4 transition-all">About</a>
-            <a href="#writing" class="hover:underline underline-offset-4 transition-all">Writing</a>
-            <a href="#photography" class="hover:underline underline-offset-4 transition-all">Photography</a>
-            <a href="#contact" class="hover:underline underline-offset-4 transition-all">Contact</a>
+        <nav class="flex items-center space-x-6 sm:space-x-8 text-base sm:text-lg text-purpleBrand font-serif">
+            <a href="#about" class="hover:underline underline-offset-4">About</a>
+            <a href="#photography" class="hover:underline underline-offset-4">Photography</a>
+            <a href="#resume" class="hover:underline underline-offset-4">Résumé</a>
+            <a href="#clips" class="hover:underline underline-offset-4">Clips</a>
+            <a href="#contact" class="hover:underline underline-offset-4">Contact</a>
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="w-full max-w-7xl mx-auto px-6 sm:px-10 py-6 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
 
-    <!-- Footer / Secondary Section -->
+            <!-- Hero Left: Bio & Heading -->
+            <div class="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-6">
+                <h1
+                    class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-purpleBrand tracking-tight leading-none mb-6">
+                    Hi, I’m Monique
+                </h1>
+
+                <p
+                    class="text-2xl sm:text-3xl md:text-4xl text-purpleBrand font-normal leading-snug max-w-2xl mb-8 sm:mb-10 font-serif">
+                    I am a junior journalism major writing on <span class="italic">representation in media</span>.
+                </p>
+
+                <a href="#about"
+                    class="inline-block bg-purpleBrand hover:bg-purpleHover text-white text-lg sm:text-xl px-8 py-3 shadow-md hover:shadow-lg transition-all duration-200 font-serif">
+                    About Me
+                </a>
+            </div>
+
+            <!-- Hero Right: Portrait Image -->
+            <div class="lg:col-span-5 flex flex-col items-start">
+                <div class="w-full shadow-xl">
+                    <img src="img/img.jpeg" alt="Monique James portrait photo"
+                        class="w-full h-auto object-contain max-h-[75vh]" />
+                </div>
+                <span class="text-xs sm:text-sm italic text-gray-500 mt-2 font-serif">
+                    Portrait by Monique James
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="w-full max-w-5xl mx-auto px-6 py-16 border-t border-purple-200/60">
+        <h2 class="text-4xl sm:text-5xl font-bold text-purpleBrand mb-6">About Me</h2>
+        <div class="text-lg sm:text-xl text-gray-800 space-y-4 leading-relaxed font-serif">
+            <p>
+                I am a junior journalism major dedicated to reporting on <span
+                    class="italic text-purpleBrand font-semibold">representation in media</span>. My work examines
+                gender equity, racial diversity in executive leadership, and the cultural evolution of media
+                representation.
+            </p>
+            <p>
+                Through feature reporting and visual storytelling, I focus on stories and photos thatchallenge standard
+                narratives
+                in media, bringing attention to how institutional policies directly affect underrepresented artists.
+            </p>
+            <p>
+                Currently, I photograph myself and capture videos/interviewsfor campus publications while building a
+                portfolio in multimedia journalism and creative direction.
+            </p>
+        </div>
+    </section>
+
+    <!-- Photography Gallery Section -->
+    <section id="photography" class="w-full max-w-7xl mx-auto px-6 sm:px-10 py-16 border-t border-purple-200/60">
+        <h2 class="text-4xl sm:text-5xl font-bold text-purpleBrand mb-3">Photography &amp; Creative Direction</h2>
+        <p class="text-lg text-gray-700 mb-10 font-serif">A visual collection exploring color, expression, and
+            representation.</p>
+
+        <!-- 8-Photo Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="space-y-2">
+                <img src="img/img2.jpeg" alt="Winter Storm Warning"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Winter Storm Warning</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img1.jpeg" alt="For You"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">For You</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img3.jpeg" alt="Afternoon"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Afternoon</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img4.jpeg" alt="BRRR"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">BRRR</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img5.jpeg" alt="Blizzard"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Blizzard</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img6.jpeg" alt="Illusion x"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Illusion X</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img7.jpeg" alt="Barbie Dream"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Barbie Dream</p>
+            </div>
+            <div class="space-y-2">
+                <img src="img/img8.jpeg" alt="Wicked"
+                    class="w-full h-80 object-cover shadow-md hover:opacity-95 transition-opacity" />
+                <p class="text-xs italic text-gray-500 font-serif">Wicked</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Résumé Section -->
+    <section id="resume" class="w-full max-w-5xl mx-auto px-6 py-16 border-t border-purple-200/60 font-serif">
+        <h2 class="text-4xl sm:text-5xl font-bold text-purpleBrand mb-8">Résumé</h2>
+
+        <!-- Education -->
+        <div class="mb-10">
+            <h3 class="text-2xl font-bold text-purpleBrand border-b border-purple-200 pb-2 mb-4">Education</h3>
+            <div>
+                <h4 class="text-xl font-semibold">Bachelor of Arts in Journalism</h4>
+                <p class="text-gray-700 italic">Expected Graduation: May 2028</p>
+                <p class="text-gray-600">Specialization: Multimedia Storytelling</p>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="mb-10">
+            <h3 class="text-2xl font-bold text-purpleBrand border-b border-purple-200 pb-2 mb-4">Experience</h3>
+
+            <div class="mb-6">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-xl font-semibold">Sports Video Editor</h4>
+                    <span class="text-gray-600 text-sm">Sept. 2025 – Present</span>
+                </div>
+                <p class="text-gray-700 italic mb-2">Maryland Athletic Department</p>
+                <ul class="list-disc list-inside text-gray-800 space-y-1">
+                    <li>Edit short-form and long-form videos for athletic content.</li>
+                    <li>Captured footage with student-athletes, coaches, and athletic staff.</li>
+                    <li>Logged all edited videos and maintained a portfolio of work.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clips Section -->
+    <section id="clips" class="w-full max-w-5xl mx-auto px-6 py-16 border-t border-purple-200/60 font-serif">
+        <h2 class="text-4xl sm:text-5xl font-bold text-purpleBrand mb-4">Published Clips</h2>
+        <p class="text-lg text-gray-700 mb-8">Selected reporting on trends, and school representation.</p>
+
+        <article class="mb-6">
+            <h3 class="text-2xl font-semibold text-purpleBrand hover:underline">
+                <a href="https://www.hercampus.com/school/maryland/im-just-a-girl-a-lighthearted-tiktok-trend-becoming-a-cultural-debate/"
+                    target="_blank" rel="noopener noreferrer">
+                    ‘I’m Just a Girl’: A Lighthearted TikTok Trend Becoming a Cultural Debate'
+                </a>
+            </h3>
+            <p class="text-sm text-gray-500 mb-2">Published Oct. 9, 2026 | Her Campus</p>
+            <p class="text-gray-800">An examination of a Tiktok trend and its impact on cultural conversations.</p>
+        </article>
+
+        <article class="mb-6">
+            <h3 class="text-2xl font-semibold text-purpleBrand hover:underline">
+                <a href="https://www.hercampus.com/school/maryland/what-it-means-to-be-a-queen-the-reality-of-being-on-a-royal-court/"
+                    target="_blank" rel="noopener noreferrer">
+                    'What It Means To Be A Queen: The Reality of Being on A Royal Court'
+                </a>
+            </h3>
+            <p class="text-sm text-gray-500 mb-2">Published Oct. 15, 2026 | Her Campus</p>
+            <p class="text-gray-800">A deep dive into HBCUs and their representation of their royal courts, exploring
+                the cultural significance and challenges faced by students participating in these traditions.
+            </p>
+        </article>
+    </section>
+
+    <!-- Footer / Contact Section -->
     <footer id="contact" class="w-full max-w-7xl mx-auto px-6 sm:px-10 pt-16 pb-12 mt-12 border-t border-purple-200/50">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 
-            <!-- Left Side Footer Info -->
             <div class="space-y-2">
                 <h2 class="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-purpleBrand">
                     Monique James
                 </h2>
                 <div>
-                    <!-- Main Hero Section -->
-                    <main class="w-full max-w-7xl mx-auto px-6 sm:px-10 py-6 md:py-12 flex-grow flex items-center">
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center w-full">
-
-                            <!-- Hero Left: Bio & Heading -->
-                            <div class="lg:col-span-7 flex flex-col items-start hero-title pr-0 lg:pr-4">
-                                <h1
-                                    class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-purpleBrand tracking-tight leading-none mb-6">
-                                    Hi, I’m Monique
-                                </h1>
-
-                                <p
-                                    class="text-2xl sm:text-3xl md:text-4xl text-purpleBrand font-normal leading-snug max-w-2xl mb-8 sm:mb-12">
-                                    I am a junior journalism major writing on <span class="italic">representation in
-                                        sports</span>.
-                                </p>
-
-                                <a href="#about"
-                                    class="inline-block bg-purpleBrand hover:bg-purpleHover text-white text-lg sm:text-xl px-8 py-3 shadow-md hover:shadow-lg transition-all duration-200">
-                                    About Me
-                                </a>
-                            </div>
-                            <!-- Hero Right: Portrait Image Container -->
-                            <!-- Hero Right: Portrait Image Container -->
-                            <div class="lg:col-span-5 flex flex-col items-start">
-                                <div class="w-full shadow-xl">
-                                    <img src="img.jpeg" alt="Monique James"
-                                        class="w-full h-auto object-contain max-h-[75vh]" />
-                                </div>
-                                <span class="text-xs sm:text-sm italic text-gray-500 mt-2 font-serif">
-                                    Portrait by Monique James
-                                </span>
-                            </div>
-                            </span>
-                        </div>
+                    <a href="mailto:nique@uniquelycaptured.art"
+                        class="text-xl sm:text-2xl italic text-purpleBrand hover:underline underline-offset-4 transition-all">
+                        nique@uniquelycaptured.art
+                    </a>
                 </div>
-                </main>
-                <a href="mailto:nique@uniquelycaptured.art"
-                    class="text-xl sm:text-2xl italic text-purpleBrand hover:underline underline-offset-4 transition-all">
-                    Contact me
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-center space-x-5 text-purpleBrand text-xl pt-4 md:pt-0">
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-70"
+                    aria-label="X/Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-70"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="hover:opacity-70"
+                    aria-label="Threads">
+                    <i class="fa-brands fa-threads"></i>
                 </a>
             </div>
-        </div>
-
-        <!-- Social Links (Center/Right aligned) -->
-        <div class="flex items-center space-x-5 text-gray-700 text-lg pt-4 md:pt-0">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                class="hover:text-purpleBrand transition-colors" aria-label="Twitter">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                class="hover:text-purpleBrand transition-colors" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://threads.net" target="_blank" rel="noopener noreferrer"
-                class="hover:text-purpleBrand transition-colors" aria-label="Threads">
-                <i class="fa-brands fa-threads"></i>
-            </a>
-        </div>
 
         </div>
     </footer>
@@ -163,6 +254,5 @@
 </body>
 
 </html>
-</head>
 
-</html>
+<head>
